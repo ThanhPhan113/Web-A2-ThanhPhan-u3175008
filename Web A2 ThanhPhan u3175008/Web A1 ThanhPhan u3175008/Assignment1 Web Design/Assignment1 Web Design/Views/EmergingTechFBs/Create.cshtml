@@ -1,0 +1,102 @@
+﻿@model Assignment1_Web_Design.Models.EmergingTechFB
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row" style="background-color: lightgray;">
+    <div class="col-md-4" style="margin-left: 20px;">
+        <h4>Feedback on Emerging Technologies</h4>
+        <hr />
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" type="date" class="form-control" readonly />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" readonly />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Heading" class="control-label"></label>
+                <input asp-for="Heading" class="form-control" placeholder="Enter a topic for your feedback" />
+                <span asp-validation-for="Heading" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergingTechnologyName" class="control-label"></label>
+                @*<input asp-for="EmergingTechnologyName" class="form-control" />*@
+                <select asp-for="EmergingTechnologyName" class="form-control">
+                    <option value="selected disabled" selecteddisabled>Select an Emerging Technology</option>
+                    <option>EmergingTechnology</option>
+                    <option>Internet of Things</option>
+                    <option>Cognitive Services</option>
+                    <option>Cloud Computing</option>
+                    <option>Robotics</option>
+                    <option>Blockchains</option>
+                </select>
+                <span asp-validation-for="EmergingTechnologyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StarRating" class="control-label"></label>
+                <input asp-for="StarRating" class="form-control" min="0" max="5"/>
+                @*<select asp-for="StarRating" class="form-control">
+                    <option value="selected disabled" selecteddisabled>Please rate our Tech</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>*@
+                <span asp-validation-for="StarRating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeedBack" class="control-label"></label>
+                <textarea asp-for="FeedBack" class="form-control" rows="5" placeholder="Enter your feedback here"></textarea>
+                <span asp-validation-for="FeedBack" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Agree" class="control-label"></label>
+                <input asp-for="Agree" class="form-control" />
+                <span asp-validation-for="Agree" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Disagree" class="control-label"></label>
+                <input asp-for="Disagree" class="form-control" />
+                <span asp-validation-for="Disagree" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="isAgreeAdded" /> @Html.DisplayNameFor(model => model.isAgreeAdded)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="isDisagreeAdded" /> @Html.DisplayNameFor(model => model.isDisagreeAdded)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+        <div>
+    <a asp-controller="Home" asp-action="EmergingTechnologies">Back to Emerging Technologies</a>
+</div>
+        <hr/>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

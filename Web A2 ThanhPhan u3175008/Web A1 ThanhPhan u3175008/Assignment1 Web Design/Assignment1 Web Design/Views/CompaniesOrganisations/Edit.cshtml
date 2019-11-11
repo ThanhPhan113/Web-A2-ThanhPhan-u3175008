@@ -1,0 +1,89 @@
+﻿@model Assignment1_Web_Design.Models.CompaniesOrganisations
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div class="row" style="background-color: lightgray;">
+    <div class="col-md-4" style="margin-left: 30px;">
+        <h4>Feedback on Organisations</h4>
+        <hr />
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" type="date" class="form-control" readonly />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" readonly />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Heading" class="control-label"></label>
+                <input asp-for="Heading" class="form-control" />
+                <span asp-validation-for="Heading" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompaniesOrganisationName" class="control-label"></label>
+                @*<input asp-for="EmergingTechnologyName" class="form-control" />*@
+                <select asp-for="CompaniesOrganisationName" class="form-control">
+                    <option value="selected disabled" selecteddisabled>Select an Organisation</option>
+                    <option>AI</option>
+                    <option>Department of Industry Innovation and Science</option>
+                    <option>MICROSOFT</option>
+                    <option>CSIRO</option>
+                    <option>AMAZON</option>
+                    <option>GOOGLE</option>
+                </select>
+                <span asp-validation-for="CompaniesOrganisationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StarRating" class="control-label"></label>
+                <input asp-for="StarRating" class="form-control" min="0" max="5" />
+                @*<select asp-for="StarRating" class="form-control">
+                        <option value="selected disabled" selecteddisabled>Please rate our Tech</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>*@
+                <span asp-validation-for="StarRating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeedBack" class="control-label"></label>
+                <textarea asp-for="FeedBack" class="form-control" rows="5" placeholder="Enter your feedback here"></textarea>
+                <span asp-validation-for="FeedBack" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agree" class="control-label"></label>
+                <input asp-for="Agree" class="form-control" />
+                <span asp-validation-for="Agree" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Disagree" class="control-label"></label>
+                <input asp-for="Disagree" class="form-control" />
+                <span asp-validation-for="Disagree" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+        <div>
+            <a asp-controller="Home" asp-action="Organisations">Back to Organisations</a>
+            <hr />
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

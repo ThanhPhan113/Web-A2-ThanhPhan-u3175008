@@ -1,0 +1,133 @@
+﻿html {
+    min-height: 100%;
+}
+
+
+.Organisationsfirstimage {
+    /*height: 300px;
+    background-image: url(../images/homepagefirstimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right 0;
+    margin-left: 0px;
+    margin-right: 0px;*/
+    height: auto;
+    background-image: url(../images/homepagefirstimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+
+.text1 {
+    height: 200px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    font-family: 'Sans serif';
+}
+
+.IBM {
+    /*background-image: url(../images/IBM.png);*/
+    /*height: 400px;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    background-size: cover;*/
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: 'Sans serif';
+}
+
+.DIIS {
+    background-image: url(../images/DIIS.png);
+    /*height: 400px;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    background-size: cover;*/
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: 'Sans serif';
+}
+
+.microsoft {
+    background-image: url(../images/microsoft.png);
+    /*height: 400px;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    background-size: cover;*/
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: 'Sans serif';
+}
+
+.CRIRO {
+    background-image: url(../images/CSIRO.png);
+    /*height: 400px;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    background-size: cover;*/
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: 'Sans serif';
+}
+
+.Amazon {
+    background-image: url(../images/Amazon.png);
+    /*height: 400px;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    background-size: cover;*/
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: 'Sans serif';
+}
+
+
+.Google {
+    background-image: url(../images/Google.png);
+    /*height: 400px;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    background-size: cover;*/
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: 'Sans serif';
+}

@@ -1,0 +1,48 @@
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.deps.json
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.json
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.dev.json
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csprojAssemblyReference.cache
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csproj.CoreCompileInputs.cache
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfoInputs.cache
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfo.cs
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.deps.json
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.json
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.dev.json
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csprojAssemblyReference.cache
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csproj.CoreCompileInputs.cache
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfoInputs.cache
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfo.cs
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Assisgnment\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.deps.json
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.json
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.dev.json
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csproj.CoreCompileInputs.cache
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfoInputs.cache
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfo.cs
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csprojAssemblyReference.cache
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.deps.json
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.json
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.runtimeconfig.dev.json
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\bin\Debug\netcoreapp2.0\Assignment1 Web Design.pdb
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csprojAssemblyReference.cache
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.csproj.CoreCompileInputs.cache
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfoInputs.cache
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.AssemblyInfo.cs
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.dll
+C:\Users\thanh\Documents\Web A2 ThanhPhan u3175008\Web A2 ThanhPhan u3175008\Web A1 ThanhPhan u3175008\Assignment1 Web Design\Assignment1 Web Design\obj\Debug\netcoreapp2.0\Assignment1 Web Design.pdb

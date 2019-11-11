@@ -1,0 +1,82 @@
+﻿@model Assignment1_Web_Design.Models.EmergingTechFB
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row" style="background-color: lightgray;">
+    <div style="margin-left:40px;">
+        <h4>Feedback on Emerging Technologies</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Username)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Username)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Heading)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Heading)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.EmergingTechnologyName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.EmergingTechnologyName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.StarRating)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StarRating)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.FeedBack)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FeedBack)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Agree)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Agree)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Disagree)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Disagree)
+            </dd>
+            @*<dt>
+            @Html.DisplayNameFor(model => model.isAgreeAdded)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.isAgreeAdded)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.isDisagreeAdded)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.isDisagreeAdded)
+        </dd>*@
+        </dl>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+            <a asp-controller="Home" asp-action="EmergingTechnologies">Back to Emerging Technologies</a>
+            <hr />
+        </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+

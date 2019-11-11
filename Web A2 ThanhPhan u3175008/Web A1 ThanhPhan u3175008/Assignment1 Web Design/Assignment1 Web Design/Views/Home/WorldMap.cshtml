@@ -1,0 +1,248 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="row">
+    <div class="Worldmappagefirstimage">
+        <div class="text1">
+            <h1 style="text-align:center">Where We Locating</h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD0wazGV9cGzUwZltHMLkqvvd8JKkKfBZ4"></script>
+    <script>
+        // Declare a variable for map
+        var map;
+        // Get lattitude and longitude of Canberra Centre
+        var londonCentre = new google.maps.LatLng(-0.1277583, 51.5073509);
+        // Initialise the map
+        function initMap() {
+            // Define the properties for Canberra Centre map
+            var londonMap = {
+                center: londonCentre,
+                zoom: 2,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+        
+
+            // Create a map object for Canberra Centre
+            // using londonMap and the <div> element with id="googleMap"
+            map = new google.maps.Map(
+                document.getElementById("googleMap"), londonMap);
+
+            // Add markers below this line
+            
+            addIBM(map);
+            addMicrosoft(map);
+            addAmazon(map);
+            addGoogle(map);
+            addCSIRO(map);
+            addDIIS(map);
+           
+
+        }
+        // Add other functions below this line
+        function addIBM(map) {
+            // IBM Companny
+            var ibm =
+                new google.maps.LatLng(-41.9493072, 175.7400367);
+            var markerIBM = new google.maps.Marker({
+                position: ibm,
+            });
+
+            markerIBM.setMap(map);
+
+            var contentIBM =
+                ' <h1>IBM New Zealand</h1>' +
+                ' <img src="../images/IBMmap.png" ' +
+                '      style="float:left; width:25%; margin-right:10px;">' +
+                ' <p><b> International Business Machines Corporation(IBM)</b> is an American multinational technology company headquartered ' +
+                'in Armonk, New York, United States, with operations in over 170 countries. ' +
+                'The company began in 1911 as the Computing - Tabulating - Recording Company(CTR) and was renamed "International Business Machines" in 1924.<br>' +
+                '<a href="https://en.wikipedia.org/wiki/IBM">Wikipedia</a>' 
+                ' </p>';
+
+
+            var infoIBM = new google.maps.InfoWindow({
+                content: contentIBM
+            });
+
+            google.maps.event.addListener(markerIBM, 'click',
+                function () {
+                    infoIBM.open(map, markerIBM);
+                });
+        }
+
+
+        function addMicrosoft(map) {
+            // Microsoft
+            var microsoft =
+                new google.maps.LatLng(-35.306597, 149.1319403);
+            var markerMicrosoft = new google.maps.Marker({
+                position: microsoft,
+            });
+
+            markerMicrosoft.setMap(map);
+
+            var contentMicrosoft =
+                ' <h1>Microsoft</h1>' +
+                ' <img src="../images/Microsoftmap.png" ' +
+                '      style="float:left; width:25%; margin-right:10px;">' +
+                ' <p><b>Microsoft</b> is an American multinational technology company with headquarters in Redmond, Washington. ' +
+                'It develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers,' +
+                ' and related services.Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet ' +
+                'Explorer and Edge web browsers.Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of touchscreen personal computers.<br>' +
+                '<a href="https://en.wikipedia.org/wiki/Microsoft">Wikipedia</a>' +
+                ' </p>';
+         
+               
+            
+            [7]
+            var infoMicrosoft = new google.maps.InfoWindow({
+                content: contentMicrosoft
+            });
+
+            google.maps.event.addListener(markerMicrosoft, 'click',
+                function () {
+                    infoMicrosoft.open(map, markerMicrosoft);
+                });
+        }
+
+
+
+        function addAmazon(map) {
+            // Amazon
+            var amazon =
+                new google.maps.LatLng(-35.8516202, 143.6338367);
+            var markerAmazon = new google.maps.Marker({
+                position: amazon,
+            });
+
+            markerAmazon.setMap(map);
+
+            var contentAmazon =
+                ' <h1>Amazon</h1>' +
+                ' <img src="../images/Amazonmap.png" ' +
+                '      style="float:left; width:25%; margin-right:10px;">' +
+                ' <p><b>Amazon</b> is an American electronic commerce and cloud computing company based in Seattle, Washington, that was founded by Jeff Bezos on July 5, 1994. The tech giant is the largest Internet retailer in the world as measured by revenue and market capitalization, and second largest after Alibaba Group in terms of total sales.[3] The amazon.com website started as an online bookstore and later diversified to sell video downloads/streaming, MP3 downloads/streaming, audiobook downloads/streaming, software, video games, electronics, apparel, furniture, food, toys, and jewelry. The company also produces consumer electronics—Kindle e-readers, Fire tablets, Fire TV, and Echo—and is the worlds largest provider of cloud infrastructure services(IaaS and PaaS).[4] Amazon also sells certain low - end products under its in -house brand AmazonBasics.<br>' +
+                '<a href="https://en.wikipedia.org/wiki/Amazon_(company)">Wikipedia</a>' +
+                ' </p>';
+
+            var infoAmazon = new google.maps.InfoWindow({
+                content: contentAmazon
+            });
+
+            google.maps.event.addListener(markerAmazon, 'click',
+                function () {
+                    infoAmazon.open(map, markerAmazon);
+                });
+        }
+
+
+
+
+        function addGoogle(map) {
+            // Google
+            var mygoogle =
+                new google.maps.LatLng(-33.8666199, 151.193664);
+            var markerGoogle = new google.maps.Marker({
+                position: mygoogle,
+            });
+
+            markerGoogle.setMap(map);
+
+            var contentGoogle =
+                ' <h1>Google</h1>' +
+                ' <img src="../images/Googlemap.png" ' +
+                '      style="float:left; width:25%; margin-right:10px;">' +
+                ' <p><b>Google</b> is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California. Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google as a privately held company on September 4, 1998. An initial public offering (IPO) took place on August 19, 2004, and Google moved to its headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google is Alphabets leading subsidiary and will continue to be the umbrella company for Alphabets Internet interests. Sundar Pichai was appointed CEO of Google, replacing Larry Page who became the CEO of Alphabet.<br>' +
+                '<a href="https://en.wikipedia.org/wiki/Google">Wikipedia</a>' +
+                ' </p>';
+
+            var infoGoogle = new google.maps.InfoWindow({
+                content: contentGoogle
+            });
+
+            google.maps.event.addListener(markerGoogle, 'click',
+                function () {
+                    infoGoogle.open(map, markerGoogle);
+                });
+        }
+
+
+        function addCSIRO(map) {
+            // CSIRO
+            var csiro =
+                new google.maps.LatLng(-35.2414507, 149.0606919);
+            var markerCSIRO = new google.maps.Marker({
+                position: csiro,
+            });
+
+            markerCSIRO.setMap(map);
+
+            var contentCSIRO =
+                ' <h1>CSIRO</h1>' +
+                ' <img src="../images/CSIROmap.png" ' +
+                '      style="float:left; width:25%; margin-right:10px;">' +
+                ' <p><b>Commonwealth Scientific and Industrial Research Organisation (CSIRO)</b> is an independent Australian federal government agency responsible for scientific research. Its chief role is to improve the economic and social performance of industry for the benefit of the community.<br>' +
+                '<a href="https://en.wikipedia.org/wiki/CSIRO">Wikipedia</a>' +
+                ' </p>';
+
+            var infoCSIRO = new google.maps.InfoWindow({
+                content: contentCSIRO
+            });
+
+            google.maps.event.addListener(markerCSIRO, 'click',
+                function () {
+                    infoCSIRO.open(map, markerCSIRO);
+                });
+        }
+
+
+
+        function addDIIS(map) {
+            // Department of Industry Innovation and Science
+            var diis =
+                new google.maps.LatLng(-35.2817819, 149.1318781);
+            var markerDIIS = new google.maps.Marker({
+                position: diis,
+            });
+
+            markerDIIS.setMap(map);
+
+            var contentDIIS =
+                ' <h1>Department of Industry Innovation and Science</h1>' +
+                ' <img src="../images/DIISmap.png" ' +
+                '      style="float:left; width:25%; margin-right:10px;">' +
+                ' <p><b> The Department of Industry, Innovation and Science</b> is a department of the Australian Government responsible for consolidating the Government’s efforts to drive economic growth, productivity and competitiveness by bringing together industry, energy, resources and science.<br>' +
+                '<a href="https://en.wikipedia.org/wiki/Department_of_Industry,_Innovation_and_Science">Wikipedia</a>' +
+                ' </p>';
+
+            var infoDIIS = new google.maps.InfoWindow({
+                content: contentDIIS
+            });
+
+            google.maps.event.addListener(markerDIIS, 'click',
+                function () {
+                    infoDIIS.open(map, markerDIIS);
+                });
+        }
+
+
+
+
+
+
+        // Add a DOM listener that will execute the initMap function
+        // on window load (when the page is loaded)
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+
+    @* The div element below is to display Google Map*@
+    <div id="googleMap" style="width:100%;height:800px;"></div>
+</div>

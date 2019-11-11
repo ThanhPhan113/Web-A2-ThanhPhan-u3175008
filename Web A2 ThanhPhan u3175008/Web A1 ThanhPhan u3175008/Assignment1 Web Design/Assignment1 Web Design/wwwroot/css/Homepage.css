@@ -1,0 +1,190 @@
+﻿
+html {
+
+    min-height:100%;
+}
+.homepagefirstimage {
+    /*height: auto;
+    min-height: 100%;
+    background-image: url(../images/homepagefirstimage.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px;
+    background-attachment: fixed;*/
+    height: 150px;
+    background-image: url(../images/homepagefirstimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+
+.homepagesecondimage {
+    /*height: 100%;
+    min-height: 100%;
+    background-image: url(../images/homepagesecondimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 0px;
+    background-attachment: fixed;*/
+    height: 150px;
+    background-image: url(../images/second.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+
+.text1 {
+    text-align: center;
+    color: white;
+}
+
+.AI {
+    /*background-image: url(../images/AI.png);
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    background-size: cover;*/
+    /*background-image: url(../images/AI.png);*/
+    height: 400px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+.IoT {
+    /*background-image: url(../images/IoT.png);*/
+    height: 400px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+    /*height: 400px;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    background-size: cover;*/
+}
+
+.Cognitiveservices {
+    /*background-image: url(../images/Cognitiveservices.png);*/
+    /*height: 400px;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    background-size: cover;*/
+    height: 400px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+.Cloud {
+    /*background-image: url(../images/Cloud.png);*/
+    /*height: 400px;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    background-size: cover;*/
+    height: 400px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+.Robotics {
+    /*background-image: url(../images/Robotics.png);*/
+    /*height: 400px;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    background-size: cover;*/
+    height: 400px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+
+.Blockchains {
+    /*background-image: url(../images/Blockchains.png);*/
+    /*height: 400px;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    background-size: cover;*/
+    height: 400px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+
+figure {
+    height: 400px;
+    max-width: 100%;
+    /*width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;*/
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+figcaption {
+    background: rgba(128, 128, 128, 0.8);
+    font-family: 'Franklin Gothic Medium', 'Sans serif', Arial, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    padding-top: 30%;
+    visibility: hidden;
+}
+
+figure:hover > figcaption {
+    visibility: visible;
+    margin-left:7px;
+    margin-right:7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+
+

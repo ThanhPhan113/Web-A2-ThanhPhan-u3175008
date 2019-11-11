@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Assignment1_Web_Design</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/Worldmappage.css" />
+        <link rel="stylesheet" href="~/css/About.css" />
+        <link rel="stylesheet" href="~/css/Emerging.css" />
+        <link rel="stylesheet" href="~/css/Homepage.css" />
+        <link rel="stylesheet" href="~/css/Organisations.css" />
+        <link rel="stylesheet" href="~/css/elastic-grid.min.css" type="text/css" />
+
+
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Thanh Phan</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Home">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Organisations">Organisations</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="EmergingTechnologies">Emerging Technologies</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="WorldMap">World Map</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+
+
+                    @* Normal *@
+                    @*<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>*@
+
+
+                </ul>
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid body-content" style="padding:0px;margin-right:30px">
+        <div class="row">
+            @RenderBody()
+            <div class="footerbackground row">
+
+                @* Footer for home web page *@
+                <footer style="margin-left:15px;">
+
+                    <nav>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <h6 style="color:white">Product</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="/product/">Overview</a></li>
+                                <li><a href="/pricing/">Pricing</a></li>
+                                <li><a href="/integrations/">Integrations</a></li>
+                                <li><a href="/enterprise/">Enterprise</a></li>
+                                <li><a href="/changelog/">Changelog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <h6 style="color:white">Support</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="/docs/">Documentation</a></li>
+                                <li><a href="https://support.circleci.com/hc/en-us" target="_blank">Get Support</a></li>
+                                <li><a href="https://status.circleci.com/" target="_blank">CircleCI Status</a></li>
+                                <li><a href="/ideas/">Feature Requests</a></li>
+                                <li><a href="https://discuss.circleci.com/" target="_blank">Community Forums</a></li>
+                                <li><a href="/support/premium-support/">Premium Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <h6 style="color:white">Resources</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="/blog/">Blog</a></li>
+                                <li><a href="/customers/">Case Studies</a></li>
+                                <li><a href="/resources/#videos">Videos</a></li>
+                                <li><a href="/resources/#webinars">Webinars</a></li>
+                                <li><a href="/resources/#white-papers">White Papers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <h6 style="color:white">Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="/about/">About Us</a></li>
+                                <li><a href="/jobs/">Jobs <span class="text-blue">(We're hiring!)</span></a></li>
+                                <li><a href="/about/team/">Team</a></li>
+                                <li><a href="/contact/">Contact Us</a></li>
+                                <li><a href="/partners/">Partners</a></li>
+                                <li><a href="/newsroom/">Newsroom</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <h6 style="color:white">Getting Started</h6>
+                            <ul>
+                                <li><a href="/continuous-integration/">What is CI?</a></li>
+                                <li><a href="/docs/2.0/">How to get started on CircleCI</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="col-md-2 col-xs-4">
+                        <img src="https://d3r49iyjzglexf.cloudfront.net/logo-wordmark-26f8eaea9b0f6e13b90d3f4a8fd8fda31490f5af41daab98bbede45037682576.svg" class="logo-small margin-top-small" alt="circleci">
+                    </div>
+                    <div class="col-md-4 col-md-offset-6 col-xs-offset-0 col-xs-8">
+                        <div class="text-center-small-float-right">
+                            <div class="social-container row">
+                                <div class="social-btns col-xs-12">
+                                    <a href="https://circleci.com/blog/feed.xml" class="social-btn-rss" title="RSS">
+                                        <i class="fa fa-rss" aria-hidden="true"></i><span class="sr-only">RSS</span>
+                                    </a>
+                                    <a href="https://www.facebook.com/circleci" target="_blank" class="social-btn-facebook" title="Facebook">
+                                        <i class="fa fa-facebook-official" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+                                    </a>
+                                    <a href="https://twitter.com/circleci" target="_blank" class="social-btn-twitter" title="Twitter">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span>
+                                    </a>
+                                    <a href="https://github.com/circleci" target="_blank" class="social-btn-github" title="GitHub">
+                                        <i class="fa fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/circleci" target="_blank" class="social-btn-linkedin" title="LinkedIn">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <hr class="dark no-margin">
+                        <div class="margin-top-small text-center-small-float-left">
+                            <nav>
+                                <ul class="horizontal blue">
+                                    <li><a href="/terms-of-service/">Terms of Service</a></li>
+                                    <li><a href="/privacy/">Privacy Policy</a></li>
+                                    <li><a href="/security/">Security</a></li>
+                                    <li class="language-select">
+                                        <div class="dropup show">
+                                            <a class="dropdown-toggle" role="button" id="languageSelectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://d3r49iyjzglexf.cloudfront.net/icons/ic-globe-9b9d0a726c1f0701f8219b4fc07a0d78aa9c31a79a8fa3d96e4fe4a84bc6cdbc.svg" alt="globe" width="20"> English (US) <i class="fa fa-angle-up"></i></a>
+
+                                            <div class="dropdown-menu" aria-labelledby="languageSelectDropdown">
+                                                <a class="dropdown-item active" href="#">English (US)</a>
+                                                <a class="dropdown-item" href="https://circleci.jp">日本語</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="margin-top-small text-center-small-float-right">
+                            <span style="color:white">Copyright © 2018 Circle Internet Services, Inc., All Rights Reserved.</span>
+                        </div>
+                    </div>
+
+
+                </footer>
+            </div>
+        </div>
+        </div>
+ 
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/modernizr.custom.js"></script>
+        <script src="~/js/classie.js"></script>
+        <script src="~/js/elastic_grid.min.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

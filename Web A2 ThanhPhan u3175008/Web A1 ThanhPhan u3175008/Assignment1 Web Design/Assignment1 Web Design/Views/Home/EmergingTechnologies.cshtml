@@ -1,0 +1,548 @@
+﻿@model IEnumerable<Assignment1_Web_Design.Models.EmergingTechFB>
+
+@{
+}
+
+<div class="row">
+    <div class="homepagefirstimage">
+        <div class="text1">
+            <h1 style="text-align:center">Available Emerging Technologies</h1>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div style="background-color:lightgray; margin-right: -15px; margin-top:-20px; margin-bottom: -20px;">
+    <script>
+        $(document).ready(function () {
+            $("#jquery").click(function () {
+                $("#maindiv").css("height", "250px");
+                $("#maindiv").css("font-size", "88px");
+                $("#maindiv").html("<b>jQuery</b>");
+            });
+
+            $("#maindiv").mouseenter(function () {
+                $("#maindiv").html("<div id='jquerydiv' style='margin:10px; height:300px; with:100%;'></div>");
+                $("#jquerydiv").css("background-image", "url('../images/jquery.gif')");
+                $("#jquerydiv").css("background-size", "50%");
+                $("#jquerydiv").css("background-repeat", "no-repeat");
+                $("#jquerydiv").css("display", "none");
+                $("#jquerydiv").slideDown("slow");
+            });
+
+            $("#maindiv").mouseleave(function () {
+                $("#jquerydiv").slideUp("slow", function () {
+                    $("#maindiv").html("<b>jQuery</b>");
+                });
+            });
+        });
+    </script>
+
+
+
+
+    <!-- Elastic grid -->
+    <script type="text/javascript">
+
+        //< !--AI-- >
+        $(function () {
+            $("#gridAI").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items':
+                    [
+                        {
+                            'title': 'IBM <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Explore successful Watson use cases. Achieve demonstrable benefits from AI in as little as four weeks.</h4>',
+                            'thumbnail': ['/images/AI1_small.gif'],
+                            'large': ['/images/AI1.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.ibm.com/watson/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+                        {
+                            'title': 'Microsoft <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Innovation is what creates tomorrow. Discover how Microsoft AI helps transform business.</h4>',
+                            'thumbnail': ['/images/AI2_small.gif'],
+                            'large': ['/images/AI2.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-us/ai?activetab=pivot1%3aprimaryr5', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'CSIRO <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>We act as a network and partner with government, industry and universities, to advance the technologies of AI in many areas of society and industry</h4>',
+                            'thumbnail': ['/images/AI3_small.gif'],
+                            'large': ['/images/AI3.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://data61.csiro.au/en/Our-Work/AI-and-Machine-Learning', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'Amazon <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Powerful tools for all developers to add intelligence to your applications</h4>',
+                            'thumbnail': ['/images/AI4_small.gif'],
+                            'large': ['/images/AI4.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/machine-learning/ai-lex-polly-rekognition/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+                    ]
+
+
+
+            });
+        });
+
+
+        //< !--IOT-- >
+        $(function () {
+            $("#gridIOT").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items':
+                    [
+                        {
+                            'title': 'IBM <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Industry 4.0 manufacturing is all about the increasing connectivity of smaller and smaller components. It uses the data collected by physical things, either built products out in the real world, or components within a machine on the production line, to impact how these things themselves are manufactured. The more information that can be gathered by these objects, the more effective the manufacturing process can become.</h4>',
+                            'thumbnail': ['/images/IOT1_small.gif'],
+                            'large': ['/images/IOT1.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.ibm.com/blogs/internet-of-things/industry-4-0/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+                        {
+                            'title': 'Microsoft <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Drive your digital transformation by gaining insights from your connected devices. Turn those insights into action with powerful applications built on the industry-leading platform for IoT development. From manufacturing to transportation to retail, start fueling new revenue and business opportunities with IoT solutions designed for industry needs.</h4>',
+                            'thumbnail': ['/images/IOT2_small.gif'],
+                            'large': ['/images/IOT2.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://azure.microsoft.com/en-us/overview/iot/?site=mscom_iot', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'Amazon <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>The Internet of Things connects the physical world to the Internet so that you can use data from devices to increase productivity and efficiency. Connecting things to the Internet is possible because different connectivity options are widely available, the cost of connecting is declining, and more devices are capturing data. All kinds of things are being used in IoT applications including consumer products such as refrigerators, security cameras, and cable set-top boxes; industrial systems such as conveyor belts and manufacturing equipment; and commercial devices such as traffic signals and smart meters. Any device that can be powered on could be part of an IoT application.  </h4>',
+                            'thumbnail': ['/images/IOT3_small.gif'],
+                            'large': ['/images/IOT3.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/iot/?sc_channel=PS&sc_campaign=acquisition_AU&sc_publisher=google&sc_medium=iot_nb&sc_content=iot_e&sc_detail=iot&sc_category=iot&sc_segment=154387165862&sc_matchtype=e&sc_country=AU&s_kwcid=AL!4422!3!154387165862!e!!g!!iot&ef_id=WmksLwAAAHVHXlHa:20180805102347:s', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'CIO <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>The federal government has hatched two new research projects - investigating artificial intelligence (AI) and the internet of things (IoT) technologies - in a bid to advance Australia’s knowledge and expertise in these emerging areas.</h4>',
+                            'thumbnail': ['/images/IOT4_small.gif'],
+                            'large': ['/images/IOT4.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.cio.com.au/article/641518/feds-launch-ai-iot-projects/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+                    ]
+
+
+
+            });
+        });
+
+
+
+        //< !--Cognitive Services-- >
+        $(function () {
+            $("#gridCognit").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items':
+                    [
+                        {
+                            'title': 'IBM <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Businesses are using AI now more than ever before.  From banks training AI to empower their digital workforce to telecommunication companies setting up smart chat bots to transform customer service, AI is being scaled across industries at an enterprise level. By collecting and learning from data, cognitive systems can spot trends and provide insights to help your teams improve workflows, response times and customer experiences. With smart AI, you’re able to bring your business into the 21st century and beyond.</h4>',
+                            'thumbnail': ['/images/CS1_small.gif'],
+                            'large': ['/images/CS1.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.ibm.com/services/artificial-intelligence', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+                        {
+                            'title': 'Microsoft <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Infuse your apps, websites and bots with intelligent algorithms to see, hear, speak, understand and interpret your user needs through natural methods of communication. Transform your business with AI today.</h4>',
+                            'thumbnail': ['/images/CS2_small.gif'],
+                            'large': ['/images/CS2big.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://cloud.google.com/vision/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+
+                        {
+                            'title': ' Google <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Cloud Vision offers both pretrained models via an API and the ability to build custom models using AutoML Vision to provide flexibility depending on your use case.</h4>',
+                            'thumbnail': ['/images/CS3_small.gif'],
+                            'large': ['/images/CS3big.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://cloud.google.com/vision/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'Forbes <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Artificial intelligence has been a far-flung goal of computing since the conception of the computer, but we may be getting closer than ever with new cognitive computing models.</h4>',
+                            'thumbnail': ['/images/CS4_small.gif'],
+                            'large': ['/images/CS4big.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/bernardmarr/2016/03/23/what-everyone-should-know-about-cognitive-computing/#423eb3db5088', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+                    ]
+
+
+
+            });
+        });
+
+
+        //< !--o	Cloud Computing-- >
+        $(function () {
+            $("#gridcloud").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items':
+                    [
+                        {
+                            'title': 'Google <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Google Cloud IoT is a complete set of tools to connect, process, store, and analyze data both at the edge and in the cloud. The platform consists of scalable, fully-managed cloud services; an integrated software stack for edge/on-premises computing with machine learning capabilities; and managed Android Things OS for all your IoT needs.</h4>',
+                            'thumbnail': ['/images/CL1_small.gif'],
+                            'large': ['/images/CL1.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://cloud.google.com/solutions/iot/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+                        {
+                            'title': 'Microsoft <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Turn your ideas into solutions faster using a trusted cloud that has been designed for you. Azure.Cloud for all.</h4>',
+                            'thumbnail': ['/images/CL2_small.gif'],
+                            'large': ['/images/CL2.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://azure.microsoft.com/en-au/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'IBM <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>This is not just any cloud. This is the IBM Cloud.</h4>',
+                            'thumbnail': ['/images/CL3_small.gif'],
+                            'large': ['/images/CL3.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.ibm.com/cloud/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'Amazon <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Whether youre looking for compute power, database storage, content delivery, or other functionality, AWS has the services to help you build sophisticated applications with increased flexibility, scalability and reliabilityView AWS Free Tier Details</h4>',
+                            'thumbnail': ['/images/CL4_small.gif'],
+                            'large': ['/images/CL4.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+                    ]
+
+
+
+            });
+        });
+
+
+        //< !--o	Robotics-- >
+        $(function () {
+            $("#gridRobotics").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items':
+                    [
+                        {
+                            'title': 'Forbes <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>As manufacturers around the world make strides to build out the vision of Industry 4.0, many – if not most – will embrace advanced machines to accelerate the digital transformation of their operations. The pressures remain: improve productivity, meet consumers’ expectations for customization and drive continuous product innovation while consistently lowering costs. Bottom line: manufacturers can’t ignore the thrumming beat calling for measurable and meaningful progress on Industry 4.0 in 2018.</h4>',
+                            'thumbnail': ['/images/R1_small.gif'],
+                            'large': ['/images/R1.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/jimlawton/2018/03/20/the-role-of-robots-in-industry-4-0/#76ac60bf706b', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+                        {
+                            'title': 'ZDNet <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Industry 4.0 involves the heavy use of automation and data exchange in manufacturing environments, encompassing areas such as cyber-physical systems, the Internet of Things (IoT) and cloud computing, among others. With Industry 4.0, manufacturers will be able to operate "smarter" factories, in which they can more easily tailor products for specific customers.</h4>',
+                            'thumbnail': ['/images/R2_small.gif'],
+                            'large': ['/images/R2.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.zdnet.com/article/robotics-and-industry-4-0/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'I - Scoop robots cobots <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Despite the de facto main attention for IoT when people talk about ‘Industrie 4.0’, many other/related technologies and realities take center stage in Industry 4.0 and Logistics 4.0.</h4>',
+                            'thumbnail': ['/images/R3_small.gif'],
+                            'large': ['/images/R3.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.i-scoop.eu/robots-cobots-logistics-4-0/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'Automation World <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Is your industrial Ethernet network prepared to handle several times the bandwidth previously asked of it? Before your next upgrade, find out what the impact might be on your network.</h4>',
+                            'thumbnail': ['/images/R4_small.gif'],
+                            'large': ['/images/R4.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.automationworld.com/industry-40-here-are-you-ready', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+                    ]
+
+
+
+            });
+        });
+
+
+        //< !--o	blockchains-- >
+        $(function () {
+            $("#gridBlockchains").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items':
+                    [
+                        {
+                            'title': 'Blockchain <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Exchange and transact bitcoin, ethereum, and bitcoin cash using the world’s most trusted and secure cryptocurrency wallet.</h4>',
+                            'thumbnail': ['/images/BC1_small.gif'],
+                            'large': ['/images/BC1.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.blockchain.com/', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+                        {
+                            'title': 'PC Magazine <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Blockchain isnt a household buzzword, like the cloud or the Internet of Things.Its not an in-your-face innovation you can see and touch as easily as a smartphone or a package from Amazon. But in a world where anyone can edit a Wikipedia entry, blockchain is the answer to a question weve been asking since the dawn of the internet age: How can we collectively trust what happens online?</h4>',
+                            'thumbnail': ['/images/BC2_small.gif'],
+                            'large': ['/images/BC2.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://au.pcmag.com/amazon-web-services/46389/feature/blockchain-the-invisible-technology-thats-changing-the-world', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'Forbes <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Welcome to Industry 4.0, the new age where smart technology and smart appliances are moving us closer and closer to a fully digitized society. Potentially valued at almost $4 trillion by 2020, studies show that businesses everywhere will be able to benefit by embracing the fourth industrial revolution. And, with the emergence of blockchain, were already on the pathway there.</h4>',
+                            'thumbnail': ['/images/BC3_small.gif'],
+                            'large': ['/images/BC3.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/andrewrossow/2018/04/11/bringing-blockchain-into-industry-4-0/#13eac0606dc7', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+
+
+                        {
+                            'title': 'CSIRO <hr/> <a class="btn btn-primary">More Details</a>',
+                            'description': '<h4>Blockchain is a form of distributed ledger technology (DLT) that connects different parties over the internet to provide a secure and trustworthy record of their transactions (both financial and non-financial), without giving control to a third party.</h4>',
+                            'thumbnail': ['/images/BC4_small.gif'],
+                            'large': ['/images/BC4.gif'],
+                            'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'https://www.data61.csiro.au/en/our-work/safety-and-security/secure-systems-and-platforms/blockchain', 'new_window': true },
+                                ],
+                            'tags': []
+                        },
+                    ]
+
+
+
+            });
+        });
+
+    </script>
+
+    <h1 class="" style="    text-align: center; color: blue;">AI</h1>
+    <div id="gridAI"></div>
+
+    <h1 class="" style="    text-align: center; color: blue;">IoT</h1>
+    <div id="gridIOT"></div>
+
+    <h1 class="" style="    text-align: center; color: blue;">Cognitive Services</h1>
+    <div id="gridCognit"></div>
+
+    <h1 class="" style="    text-align: center; color: blue;">Cloud Computing</h1>
+    <div id="gridcloud"></div>
+
+    <h1 class="" style="    text-align: center; color: blue;">Robotics</h1>
+    <div id="gridRobotics"></div>
+
+    <h1 class="" style="    text-align: center; color: blue;">Blockchains</h1>
+    <div id="gridBlockchains"></div>
+</div>
+
+<div class="row" style="background-color: lightgray">
+    <div class="title" style="margin-left:40px;">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a asp-controller="EmergingTechFBs" asp-action="Create" class="btn btn-success">Submit your feedback</a>
+        }
+        else
+        {
+            <br/>
+            <p>
+                Please <a href="~/Account/Login?returnUrl=~/Home/EmergingTechnologies">login</a> or <a href="~/Account/Register?returnUrl=~/Home/EmergingTechnologies">
+                    create
+                    an account
+                </a> to post your feedback on this page
+            </p>
+        }
+        @foreach (var item in Model)
+        {
+            <h2>
+                @Html.DisplayFor(modelItem => item.Heading)
+            </h2>
+            <h3>
+                @@ @Html.DisplayFor(modelItem => item.EmergingTechnologyName)
+            </h3>
+
+            <div style="font-size: 24px;">
+                @Html.HiddenFor(modelItem => item.StarRating)
+                @{for (int i = 0; i < item.StarRating; i++)
+                    {<span style="color:yellow;">&#x2605;</span> }
+                    for (int i = 0; i < 5 - item.StarRating; i++)
+                    {<span>&#x2606;</span> }}
+            </div>
+
+            <p>
+                @Html.DisplayFor(modelItem => item.FeedBack)
+            </p>
+            <div>
+                <p>
+                    Feedback by <b> @Html.DisplayFor(modelItem => item.Username)</b>
+                    on <b>@Html.DisplayFor(modelItem => item.Date)</b>
+                </p>
+            </div>
+
+            <div>
+                <a asp-controller="EmergingTechFBs" asp-action="Details" asp-route-id="@item.Id" class="btn btn-default">Details</a>
+                <a asp-controller="EmergingTechFBs" asp-action="CountAgree" asp-route-id="@item.Id" class="btn btn-success">Agree (@item.Agree)</a>
+                <a asp-controller="EmergingTechFBs" asp-action="CountDisagree" asp-route-id="@item.Id" class="btn btn-danger">Disagree (@item.Disagree)</a>
+                <span class="pull-right">
+                    @{
+                        if (User.IsInRole("Manager"))
+                        {
+                            <a asp-controller="EmergingTechFBs" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-default">Edit</a>
+                        }
+                    }
+                    @{
+                        if (User.IsInRole("Manager"))
+                        {
+                            <a asp-controller="EmergingTechFBs" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-default">Delete</a>
+                        }
+                    }
+                </span>
+                <hr />
+            </div>
+        }
+    </div>
+</div>

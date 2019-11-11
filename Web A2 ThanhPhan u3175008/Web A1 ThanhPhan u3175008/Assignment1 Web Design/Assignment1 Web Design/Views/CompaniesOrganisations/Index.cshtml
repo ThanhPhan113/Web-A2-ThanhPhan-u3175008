@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Assignment1_Web_Design.Models.CompaniesOrganisations>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row" style="background-color: lightgray">
+    <div class="title" style="margin-left:40px;">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <br />
+            <a asp-controller="CompaniesOrganisations" asp-action="Create" class="btn btn-success">Submit your feedback</a>
+        }
+        else
+        {
+            <br />
+            <p>
+                Please <a href="~/Account/Login?returnUrl=~/Home/Organisations">login</a> or <a href="~/Account/Register?returnUrl=~/Home/Organisations">
+                    create
+                    an account
+                </a> to post your feedback on this page
+            </p>
+        }
+        @foreach (var item in Model)
+        {
+            <h2>
+                @Html.DisplayFor(modelItem => item.Heading)
+            </h2>
+            <h3>
+                @@ @Html.DisplayFor(modelItem => item.CompaniesOrganisationName)
+            </h3>
+
+            <div style="font-size: 24px;">
+                @Html.HiddenFor(modelItem => item.StarRating)
+                @{for (int i = 0; i < item.StarRating; i++)
+                    {<span style="color:yellow;">&#x2605;</span> }
+                    for (int i = 0; i < 5 - item.StarRating; i++)
+                    {<span>&#x2606;</span> }}
+            </div>
+
+            <p>
+                @Html.DisplayFor(modelItem => item.FeedBack)
+            </p>
+            <div>
+                <p>
+                    Feedback by <b> @Html.DisplayFor(modelItem => item.Username)</b>
+                    on <b>@Html.DisplayFor(modelItem => item.Date)</b>
+                </p>
+            </div>
+
+            <div>
+                <a asp-controller="CompaniesOrganisations" asp-action="Details" asp-route-id="@item.Id" class="btn btn-default">Details</a>
+                <a asp-controller="CompaniesOrganisations" asp-action="CountAgree" asp-route-id="@item.Id" class="btn btn-success">Agree (@item.Agree)</a>
+                <a asp-controller="CompaniesOrganisations" asp-action="CountDisagree" asp-route-id="@item.Id" class="btn btn-danger">Disagree (@item.Disagree)</a>
+                <span class="pull-right">
+                    @{
+                        if (User.IsInRole("Manager"))
+                        {
+                            <a asp-controller="CompaniesOrganisations" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-default">Edit</a>
+                        }
+                    }
+                    @{
+                        if (User.IsInRole("Manager"))
+                        {
+                            <a asp-controller="CompaniesOrganisations" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-default">Delete</a>
+                        }
+                    }
+                </span>
+                <hr />
+            </div>
+        }
+    </div>
+</div>

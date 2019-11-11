@@ -1,0 +1,35 @@
+﻿html {
+    min-height: 100%;
+}
+
+.homepagefirstimage {
+    height: 400px;
+    background-image: url(../images/homepagefirstimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-attachment: fixed;
+    font-family: 'Sans serif';
+}
+
+
+
+.cover {
+    height: 800px;
+    background-image: url(../images/homepagefirstimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Sans serif';
+}
+
